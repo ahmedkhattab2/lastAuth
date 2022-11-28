@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
     res.json({ hi: "hello at new server" })
 
 })
+const port=2222||process.env.PORT;
 
-app.listen(2222 ||process.env.PORT, () => {
+app.listen(port, () => {
     console.log('server is created')
 })
