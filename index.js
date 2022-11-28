@@ -20,6 +20,6 @@ app.get('/', (req, res) => {
 
 })
 
-app.listen(2222, () => {
+app.listen(2222 ||process.env.PORT, () => {
     console.log('server is created')
 })
